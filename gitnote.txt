@@ -1,0 +1,72 @@
+$ git --version
+$ git config --global user.name
+$ git config --global user.email
+$ git config --list
+
+$ cd "D:\User\Shogo Matsusako\Documents\SampleProject"
+$ git init
+
+$ git status to see the folder (directory) changes
+
+$ git add -A to bring all the changes to the stage environment.
+
+$ git commit -m “FirstCommit”
+
+$ git branch
+$ git branch New branch name
+
+$ git checkout develop(master ka nay develop path ko change dar)
+
+Edit and save sample.txt
+Do a series of flows
+ 1.$ git add -A
+ 2.$ git commit -m “change sample.txt”
+A new commit has been added to a new branch (develop)
+
+$ git checkout master(develop ka nay master path ko change dar)
+
+What you can do
+  commit
+  Create a new branch
+  Switch branches
+
+
+Get an SSH key
+  $ ssh-keygen -t rsa
+ If all goes well, a pair of private key (id_rsa) and public key (id_rsa.pub) should be generated in the ".ssh" folder directly under the user folder.
+
+Register your SSH key on Github
+ Open the id_rsa.pub created earlier with an editor or Notepad, and copy the character string inside.It should be ssh-rsa…
+ Click the icon at the top right of the GitHub page to open "Settings" in your account menu
+ Select the "SSH and GPG keys" tab from the menu on the left
+ Click "New SSH key"
+ Title: Easy-to-understand key name (optional)		
+ 例）MyNotePCKey：Paste the id_rsa.pub string you copied earlier
+
+$ git clone
+$ git lfs install
+$ git lfs track "*.<Extension you want to specify>" 
+$ git lfs track
+
+
+https://github.com/ZawMyoHtun1996/sample.git
+https://github.com/ZawMyoHtun1996/Sample2.gi
+
+To check modified status
+git status 
+■Git push
+1) Go to file exist folder
+2) git add filenames 
+※e.g., git add filename1 filename2 filename3
+or 
+git add -a
+3) git commit -m "comment"
+4) git push
+
+■for delete
+1) git rm --cached filename
+2) git commit -m "comment"
+3) git push
+
+■before git push, the deleted files will be recovered.
+1) git checkout BendingScene.unity
